@@ -1,6 +1,8 @@
 # Tieba Emotion
 
-贴吧表情前端替换
+WordPress贴吧表情替换
+
+使用Javascript在页面加载之后对整个页面的文档树遍历，替换`#滑稽`等代码
 
 ## 安装
 
