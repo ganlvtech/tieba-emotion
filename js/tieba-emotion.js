@@ -1,6 +1,6 @@
 /**
  * 贴吧表情前端替换
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Ganlv
  * Author URI: https://github.com/ganlvtech
  * License: AGPL-3.0 (https://www.gnu.org/licenses/agpl-3.0.en.html)
@@ -74,7 +74,7 @@ TiebaEmotion.replaceRecursive = function (element) {
         switch (element.childNodes[i].nodeType) {
             case Node.ELEMENT_NODE:
                 // 如果是元素节点则继续递归搜索
-                if (element.childNodes[i].contentEditable == "true") {
+                if (element.childNodes[i].contentEditable == 'true' || element.childNodes[i].nodeName == 'TEXTAREA') {
                     // 如果是可编辑元素则跳过
                     continue;
                 }
