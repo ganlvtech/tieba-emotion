@@ -3,7 +3,7 @@
 Plugin Name: Tieba Emotion
 Plugin URI: http://www.dreamimd.com/
 Description: 贴吧表情前端替换
-Version: 1.0.2
+Version: 1.0.3
 Author: Ganlv
 Author URI: https://github.com/ganlvtech
 License: AGPL-3.0 (https://www.gnu.org/licenses/agpl-3.0.en.html)
@@ -23,7 +23,7 @@ License: AGPL-3.0 (https://www.gnu.org/licenses/agpl-3.0.en.html)
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-wp_enqueue_style('tieba-emotion', plugins_url('css/style.css', __FILE__), array(), '0.1');
+wp_enqueue_style('tieba-emotion', plugins_url('css/style.css', __FILE__), array(), '0.1.1');
 wp_enqueue_script('tieba-emotion-data', plugins_url('js/tieba-emotion-data.js', __FILE__), array(), '0.1', true);
 wp_enqueue_script('tieba-emotion', plugins_url('js/tieba-emotion.js', __FILE__), array('tieba-emotion-data'), '1.0.2', true);
 wp_enqueue_script('tieba-emotion-content-script', plugins_url('js/script.js', __FILE__), array('tieba-emotion'), '1.0', true);

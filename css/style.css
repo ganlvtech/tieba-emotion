@@ -1,4 +1,6 @@
 img.tieba-emotion {
     height: 2em !important;
     display: inline !important;
+    background-color: transparent !important;
+    border: none !important;
 }
